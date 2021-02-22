@@ -5,11 +5,13 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './warning-alert.component.html',
   styleUrls: ['./warning-alert.component.css']
 })
-export class WarningAlertComponent implements OnInit {
+export class WarningAlertComponent {
 
-  constructor() { }
+  serverId: number = 10;
+  serverStatus: string = 'offline';
 
-  ngOnInit(): void {
+  getServerStatus () {
+    return this.serverStatus
   }
 
 }
